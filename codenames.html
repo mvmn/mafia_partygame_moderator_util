@@ -60,21 +60,6 @@
 				table.innerHTML = contents.join("");
 			}
 			
-			function updChoices(red, blue, black, yellow, choices) {
-				if(red<1) {
-					choices.delete("red")
-				}
-				if(blue<1) {
-					choices.delete("blue")
-				}
-				if(black<1) {
-					choices.delete("black")
-				}
-				if(yellow<1) {
-					choices.delete("yellow")
-				}
-			}
-			
 			function popRandomItem(items) {
 			    return items.splice(Math.floor(Math.random() * items.length), 1)[0];
 			}			
